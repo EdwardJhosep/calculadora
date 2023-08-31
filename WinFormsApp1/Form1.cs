@@ -60,7 +60,11 @@ namespace WinFormsApp1
 
         private void button12_Click(object sender, EventArgs e)//←
         {
-           
+            if (textBox1.Text.Length > 0)
+            {
+                textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
+            }
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)//salida pantalla
