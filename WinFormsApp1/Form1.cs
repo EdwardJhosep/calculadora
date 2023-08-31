@@ -13,22 +13,34 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)//suma 
         {
-           
+            valor1 = double.Parse(textBox1.Text);
+            operacion = '+';
+            textBox1.Clear();
+
         }
 
         private void button2_Click(object sender, EventArgs e)//resta
         {
-           
+            valor1 = double.Parse(textBox1.Text);
+            operacion = '-';
+            textBox1.Clear();
+
         }
 
         private void button3_Click(object sender, EventArgs e)//multiplicacion
         {
-           
+            valor1 = double.Parse(textBox1.Text);
+            operacion = '*';
+            textBox1.Clear();
+
         }
 
         private void button4_Click(object sender, EventArgs e)//division
         {
-            
+            valor1 = double.Parse(textBox1.Text);
+            operacion = '/';
+            textBox1.Clear();
+
         }
 
         private void button8_Click(object sender, EventArgs e)//CE
