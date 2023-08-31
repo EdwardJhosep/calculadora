@@ -47,6 +47,7 @@
             button16 = new Button();
             button17 = new Button();
             button18 = new Button();
+            mostrar = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -238,11 +239,20 @@
             button18.UseVisualStyleBackColor = true;
             button18.Click += button18_Click;
             // 
+            // mostrar
+            // 
+            mostrar.AutoSize = true;
+            mostrar.Location = new Point(247, 23);
+            mostrar.Name = "mostrar";
+            mostrar.Size = new Size(0, 15);
+            mostrar.TabIndex = 19;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(388, 468);
+            Controls.Add(mostrar);
             Controls.Add(button18);
             Controls.Add(button17);
             Controls.Add(button16);
@@ -289,5 +299,6 @@
         private Button button16;
         private Button button17;
         private Button button18;
+        private Label mostrar;
     }
 }
