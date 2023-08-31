@@ -109,7 +109,12 @@ namespace WinFormsApp1
 
         private void button16_Click(object sender, EventArgs e)//IGUAL =
         {
-           
+            valor2 = double.Parse(textBox1.Text);
+            double resultado = RealizarOperacion(valor1, valor2, operacion);
+            textBox1.Text = resultado.ToString();
+            valor1 = resultado;
+            operacion = ' ';
+
         }
 
         private void button17_Click(object sender, EventArgs e)//numero0
