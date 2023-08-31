@@ -48,6 +48,8 @@
             button17 = new Button();
             button18 = new Button();
             mostrar = new Label();
+            label1 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -247,11 +249,31 @@
             mostrar.Size = new Size(0, 15);
             mostrar.TabIndex = 19;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(137, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 20;
+            label1.Text = "label1";
+            label1.Click += label1_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(208, 36);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 15);
+            label3.TabIndex = 21;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(388, 468);
+            Controls.Add(label3);
+            Controls.Add(label1);
             Controls.Add(mostrar);
             Controls.Add(button18);
             Controls.Add(button17);
@@ -274,6 +296,7 @@
             Controls.Add(textBox1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -300,5 +323,8 @@
         private Button button17;
         private Button button18;
         private Label mostrar;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }

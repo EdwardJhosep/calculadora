@@ -5,11 +5,14 @@ namespace WinFormsApp1
         double valor1 = 0;
         double valor2 = 0;
         char operacion = ' ';
+        private string historial = "";
 
         public Form1()
         {
             InitializeComponent();
+            label1.Text = "COSIO";
         }
+
 
         private void button1_Click(object sender, EventArgs e)//suma 
         {
@@ -97,6 +100,8 @@ namespace WinFormsApp1
             textBox1.Text += "4";
         }
 
+
+
         private void button13_Click(object sender, EventArgs e)//numero1
         {
             textBox1.Text += "1";
@@ -139,22 +144,46 @@ namespace WinFormsApp1
             {
                 case '+':
                     resultado = num1 + num2;
+                    historial = $"{num1} + {num2} = {resultado}\n";
                     break;
                 case '-':
                     resultado = num1 - num2;
+                    historial = $"{num1} - {num2} = {resultado}\n";
                     break;
                 case '*':
                     resultado = num1 * num2;
+                    historial = $"{num1} * {num2} = {resultado}\n";
                     break;
                 case '/':
                     if (num2 != 0)
+                    {
                         resultado = num1 / num2;
+                        historial = $"{num1} / {num2} = {resultado}\n";
+                    }
                     else
+                    {
                         MessageBox.Show("No se puede dividir por cero.");
+                    }
                     break;
             }
 
+            label3.Text = historial; // Actualizar el historial en el segundo Label
             return resultado;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            // No es necesario modificar esta parte si solo quieres mostrar el historial en label1
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            // No es necesario modificar esta parte si solo quieres mostrar el historial en label2
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
