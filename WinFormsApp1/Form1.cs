@@ -124,8 +124,13 @@ namespace WinFormsApp1
 
         private void button18_Click(object sender, EventArgs e)// PUNTO .
         {
+            if (!textBox1.Text.Contains("."))
+            {
+                textBox1.Text += ".";
+            }
+
         }
 
-       
-        }
+
+    }
     }
