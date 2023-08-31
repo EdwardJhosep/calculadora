@@ -45,7 +45,7 @@ namespace WinFormsApp1
 
         private void button8_Click(object sender, EventArgs e)//CE
         {
-         
+            textBox1.Clear();
         }
 
         private void button10_Click(object sender, EventArgs e)//numero5
